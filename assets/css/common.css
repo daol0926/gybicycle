@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(main.css);
+@import url(mobile.css);
+
+/* 
+    [id, class naming rule : PascalCase, snake_case는 모든 속성에서 사용하지않음]
+    id = camelCase
+    class = kebab-case
+
+    [속성 나열 순서]
+    display 및 관련 속성, margin, padding, width, height, position 및 관련 속성, font 및 관련 속성, background, animation ... etc 를 최대한 준수함
+
+    [반응형 작업 위해 특수 케이스 제외하고 rem 적용]
+    1rem = 16px
+*/
+
+.show-pc{
+}
+.hide,
+.show-mb{
+    display: none;
+}
+
+header{
+    color:purple;
+    text-align:center;
+    font-size: 80px;
+    font-family:verdana;
+}
+div{
+    text-align:center;
+    font-size: 30px;
+    font-family:Verdana;
+}
+#wrap{
+    background-color:plum;
+}
+.wrapper{
+    background-color:pink;
+    padding: 40px;
+}
+
+[class*="btn-area"]{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-area-column{
+    flex-flow: column;
+}
