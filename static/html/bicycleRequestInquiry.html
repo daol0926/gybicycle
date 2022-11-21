@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+    <meta charset="utf-8" />
+    <title>자전거 등록제 - 자전거 등록</title> 
+    <meta 
+        http-equiv="X-UA-Compatible" content="IE=edge" 
+    /> <!-- 인터넷익스플로러(IE) 모두 엣지모드로 변환 명령 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="../assets/css/common.css" 
+    />
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="../assets/css/responsive.css" 
+    />
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header, footer, nav, section, article 등의 개별적인 block요소는 html5부터 적용이며 ie 하위버전에서 적용이 되지않을 수 있음 -->
+        <!-- wrapper -->
+        <div class="wrapper">
+            <!-- header -->
+            <script src="../assets/js/header.js"></script>
+            <!--//header -->
+    
+            <!-- container -->
+            <div class="container">
+                <!-- cont-comn -->
+                <div class="cont-comn">
+                    <!-- lnb -->
+                    <div class="lnb">
+                        <h2 class="lnb-title">자전거 등록제</h2>
+                        <ul>
+                            <li class="lnb-list">
+                                <button type="button" class="depth">자전거 등록 안내</button>
+                            </li>
+                            <li class="lnb-list focused">
+                                <button type="button" class="depth">자전거 등록</button>
+                                <div class="lnb-sub-list">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="sub-depth">내 자전거 등록</button>
+                                        </li>
+                                        <li class="focused">
+                                            <button type="button" class="sub-depth">내 자전거 조회/삭제</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="lnb-list">
+                                <button type="button" class="depth">자전거 이용 시설 안내</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//lnb -->
+                    <!-- sub-cont-wrap -->
+                    <div class="sub-cont-wrap">
+                        <!-- title-area -->
+                        <div class="title-area">
+                            <h3 class="cont-title">내 자전거 조회/삭제</h3>
+                            <div class="btn-area">
+                                <button type="button" class="ico-share"><span class="hide">공유하기</span></button>
+                                <button type="button" class="ico-printer"><span class="hide">출력하기</span></button>
+                            </div>
+                        </div>
+                        <!--//title-area -->
+
+                        <!-- cont-area -->
+                        <div class="cont-area">
+                            <!-- tbl-comn -->
+                            <div class="tbl-comn">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:10%"; />
+                                        <col style="width:15%"; />
+                                        <col style="width:45%"; />
+                                        <col style="width:20%"; />
+                                        <col style="width:10%"; />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">소유자명</th>
+                                            <th scope="col">차대번호</th>
+                                            <th scope="col">자전거 등록번호</th>
+                                            <th scope="col">등록일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 등록된 내역 없을 때 -->
+                                        <tr>
+                                            <td colspan="5">
+                                                <div class="result-empty"></div>
+                                            </td>
+                                        </tr>
+                                        <!--//등록된 내역 없을 때 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//tbl-comn -->
+
+                            <!-- tbl-comn -->
+                            <div class="tbl-comn">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:10%"; />
+                                        <col style="width:15%"; />
+                                        <col style="width:45%"; />
+                                        <col style="width:20%"; />
+                                        <col style="width:10%"; />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">소유자명</th>
+                                            <th scope="col">차대번호</th>
+                                            <th scope="col">자전거 등록번호</th>
+                                            <th scope="col">등록일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 등록 내역 있을 때 -->
+                                        <tr>
+                                            <th scope="row">
+                                                <input type="checkbox" />
+                                                1
+                                            </th>
+                                            <td>홍길동</td>
+                                            <td>516866813</td>
+                                            <td>884698</td>
+                                            <td>2022-00-00</td>
+                                        </tr>
+                                        <!--//등록 내역 있을 때 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//tbl-comn -->
+                            <div class="btn-area">
+                                <button type="button" class="btn gray">조회</button>
+                                <button type="button" class="btn white">삭제</button>
+                            </div>
+                        </div>
+                        <!--//cont-area -->
+                    </div>
+                    <!--//sub-cont-wrap -->
+                </div>
+                <!--//cont-comn -->
+            </div>
+            <!--//container -->
+        </div>
+        <!--//wrapper -->
+
+        <!-- footer -->
+        <script src="../assets/js/footer.js"></script>
+        <!--//footer -->
+    </div>
+    <!--//wrap -->
+
+    <!-- js -->
+    <script src="../assets/js/ui.js"></script>
+</body>
+</html>

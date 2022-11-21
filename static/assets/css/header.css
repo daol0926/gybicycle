@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 
+    [id, class naming rule : PascalCase, snake_case는 모든 속성에서 사용하지않음]
+    id = camelCase
+    class = kebab-case
+
+    [속성 나열 순서]
+    display 및 관련 속성, margin, padding, width, height, position 및 관련 속성, font 및 관련 속성, background, animation ... etc 를 최대한 준수함
+
+    [반응형 작업 위해 특수 케이스 제외하고 rem 적용]
+    1rem = 16px
+*/
+
+/* header */
+header{
+    position: relative;
+    padding-top: 3.5rem;
+    background-color: #f5f5f5;
+}
+header .gnb-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+header .gnb ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .gnb ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:70px;
+    position: relative;
+}
+header .gnb ul>li i{
+    display: none;
+}
+header .gnb .focused,
+header .gnb .focused .depth-title{
+    color:#05504a;
+}
+header .gnb .focused::after{
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #29756f;
+    position: absolute;
+    bottom: -1rem;
+}
+header .gnb ul>li .depth-title,
+header .gnb ul>li .depth-title>span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+header .nav-wrap{
+    background-color: #2d3088;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0 1.1rem;
+}
+header .top-nav{
+    justify-content: flex-end;
+}
+header .top-nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    color:#fff;
+}
+header .top-nav > ul > li{
+    display: flex;
+    align-items: center;
+    padding-left:1rem;
+    margin-right: 3rem;
+    position: relative;
+    font-size: 0.85rem;
+}
+header .top-nav > ul > li::before{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+header .top-nav > ul > li:last-child{
+    margin-right: 0;
+}
+header .top-nav button{
+    color: #fff;
+    font-size: 0.85rem;
+}

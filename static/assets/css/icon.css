@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* 
+    [id, class naming rule : PascalCase, snake_case는 모든 속성에서 사용하지않음]
+    id = camelCase
+    class = kebab-case
+
+    [속성 나열 순서]
+    display 및 관련 속성, margin, padding, width, height, position 및 관련 속성, font 및 관련 속성, background, animation ... etc 를 최대한 준수함
+
+    [반응형 작업 위해 특수 케이스 제외하고 rem 적용]
+    1rem = 16px
+*/
+
+/* icon */
+[class*="ico-"]{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+}
+[class*="ico-"] + [class*="btn"]{
+    margin-top: 25px;
+}
+[class*="ico-"] + span{
+    margin-left: 0.4rem;
+}
+.ico-logo{
+    width: 135px;
+    height: 53px;
+    background-image: url(../images/common/top_logo.png);
+}
+.ico-footer-logo{
+    width: 176px;
+    height: 40px;
+    background-image: url(../images/common/footer_logo.png);
+}
+.ico-arrow-bottom{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icon/ico-arrow-bottom.png);
+}
+.ico-arrow-sld{
+    width: 56px;
+    height: 56px;
+    background-image: url(../images/icon/ico-arrow-sld.png);
+}
+.ico-bicycle-favorite{
+    width: 78px;
+    height: 60px;
+    background-image: url(../images/icon/ico-bicycle-favorite.png);
+}
+.ico-bicycle{
+    width: 24px;
+    height:24px;
+    background-image: url(../images/icon/ico-bicycle.png);
+}
+.ico-bicycle.on{
+    background-image: url(../images/icon/ico-bicycle-on.png);
+}
+.ico-bicycle2{
+    width:106px;
+    height:109px;
+    background-image:url(../images/icon/ico-bicycle2.png);
+}
+.ico-byc-number-search{
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/icon/ico-byc-number-search.png);
+}
+.ico-check{
+    width: 12px;
+    height: 9px;
+    background-image: url(../images/icon/ico-check.png);
+}
+.ico-cscenter{
+    width: 52px;
+    height: 59px;
+    background-image: url(../images/icon/ico-cscenter.png);
+}
+.ico-download{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/ico-download.png);
+}
+.ico-duplicate{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico-duplicate.png);
+}
+.ico-home-white{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/ico-home-white.png);
+}
+.ico-home{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico-home.png);
+}
+.ico-leaf{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/ico-leaf.png);
+}
+.ico-leaf.on{
+    background-image: url(../images/icon/ico-leaf-on.png);
+}
+.ico-list{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/ico-list.png);
+}
+.ico-map{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/ico-map.png);
+}
+.ico-map.on{
+    background-image: url(../images/icon/ico-map-on.png);
+}
+.ico-more{
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/icon/ico-more.png);
+}
+.ico-notice{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico-notice.png);
+}
+.ico-number-search{
+    width: 48px;
+    height: 61px;
+    background-image: url(../images/icon/ico-number-search.png);
+}
+.ico-plus{
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/icon/ico-plus.png);
+}
+.ico-plus.on{
+    background-image: url(../images/icon/ico-plus-on.png);
+}
+.ico-arrow-bottom{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icon/ico-arrow-bottom.png);
+}
+.ico-arrow-bottom{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icon/ico-arrow-bottom.png);
+}
+.ico-printer{
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon/ico-printer.png);
+}
+.ico-reader{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico-reader.png);
+}
+.ico-share{
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon/ico-share.png);
+}
+.ico-title{
+    width: 19px;
+    height: 20px;
+    background-image: url(../images/icon/ico-title.png);
+}
+.ico-transfer-receive{
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/icon/ico-transfer-receive.png);
+}
+.ico-transfer-request{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icon/ico-transfer-request.png);
+}
+.ico-warning{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico-warning.png);
+}
