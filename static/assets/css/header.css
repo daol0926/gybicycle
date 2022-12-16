@@ -35,6 +35,22 @@ header .gnb ul>li{
     justify-content: center;
     padding-right:70px;
     position: relative;
+    cursor:pointer;
+}
+header .gnb ul>li h2 span {
+    color:inherit;
+}
+header .gnb ul>li:hover .depth-title {
+    color: #05504a;
+}
+header .gnb ul>li:hover::after{
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #29756f;
+    position: absolute;
+    bottom: -1rem;
 }
 header .gnb ul>li i{
     display: none;
@@ -82,6 +98,7 @@ header .top-nav > ul > li{
     margin-right: 3rem;
     position: relative;
     font-size: 0.85rem;
+    cursor:pointer;
 }
 header .top-nav > ul > li::before{
     content: '';
@@ -97,4 +114,5 @@ header .top-nav > ul > li:last-child{
 header .top-nav button{
     color: #fff;
     font-size: 0.85rem;
+    cursor:pointer;
 }

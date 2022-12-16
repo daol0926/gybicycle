@@ -1,7 +1,16 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
+/* @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * {
  font-family: 'Nanum Gothic', sans-serif;
  font-size: 1rem;
  color:#333;
+}
+
+@font-face {
+	font-family: 'jalnan';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/JalnanOTF.otf) format('opentype'),
+	url(../fonts/JalnanOTF.woff) format('woff'),
+	url(../fonts/Jalnan.ttf) format('truetype');
 }

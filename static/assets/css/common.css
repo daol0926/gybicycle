@@ -758,10 +758,19 @@ input[type="checkbox"]:checked::before {
 }
 
 /* button */
+.cont-area.bicycleInsureClaims [class*="btn-area"]{
+    margin-top: 4rem;
+}
 [class*="btn-area"]{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+[class*="btn-area"].right {
+    justify-content: right;
+}
+[class*="btn-area"].right.top {
+    margin-bottom: 1rem;
 }
 .btn-area-column{
     flex-flow: column;
@@ -782,6 +791,7 @@ input[type="checkbox"]:checked::before {
     height: 50px;
     padding: 0 65px;
     word-break: keep-all;
+    cursor:pointer;
 }
 .btn>span + i{
     margin-left: 0.7rem;

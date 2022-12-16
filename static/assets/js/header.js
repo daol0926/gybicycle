@@ -11,11 +11,11 @@ document.write(`
             <!-- gnb -->
             <div class="gnb">
                 <ul>
-                    <li class="show-mb focused">
+                    <li class="show-mb">
                         <i class="ico-home"></i>
                         <h2 class="depth-title">홈</h2>
                     </li>
-                    <li class="show-pc focused">
+                    <li class="show-pc">
                         <h2 class="depth-title">자전거 도시 고양</h2>
                     </li>
                     <li>
@@ -60,15 +60,9 @@ document.write(`
                     <li>
                         <button type="button" class="btn-txt">관리자페이지</button>
                     </li>
-                    <li>
+                    <li class="modal-view-01">
                         <div class="dropdown-list family-site">
-                            <a>패밀리사이트1</a>
-                            <a>패밀리사이트2</a>
-                            <a>패밀리사이트3</a>
-                            <a>패밀리사이트4</a>
-                            <a>패밀리사이트5</a>
-                            <a>패밀리사이트6</a>
-                            <a>패밀리사이트7</a>
+                            <a>패밀리사이트</a>
                         </div>
                     </li>
                 </ul>
