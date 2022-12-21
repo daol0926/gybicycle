@@ -137,6 +137,31 @@ input[type="checkbox"]:checked::before {
 .container .lnb .lnb-sub-list ul{
     display: none;
 }
+.container .lnb .lnb-sub-list{
+    width: 44px;
+    height: 54px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.container .lnb button {
+    cursor:pointer;
+}
+.container .lnb ul.lnb-sub {
+    display: none;
+    border: 1px solid #ccc;
+    border-top:0;
+    padding: 0.375rem 0;
+}
+.container .lnb ul.lnb-sub.active {
+    display:block;
+}
+.container .lnb ul.lnb-sub li {
+    padding: 0.375rem 1.25rem;
+}
+.container .lnb ul.lnb-sub li button {
+    font-size:0.875rem;
+}
 .container .lnb + .sub-cont-wrap{
     padding: 56px 0 0 40px;
     width: calc(100% - 244px);

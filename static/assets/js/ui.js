@@ -45,6 +45,20 @@ function user_event() {
       $(this).siblings('.btn-close-modal').focus();
     }
   });
+
+  /* lnb submenu s */
+  $(document).on('click', '.lnb .lnb-list .lnb-sub-list', function (e) {
+    var target = $(this).parent().next(".lnb-sub");
+
+    if(target.hasClass("active")) {
+      $(this).parent().next(".lnb-sub").removeClass("active");
+    } else {
+      $(".lnb .lnb-sub").removeClass("active");
+      target.addClass("active");
+      $(this).parent().next(".lnb-sub").addClass("active");
+    }
+  });
+  /* lnb submenu e */
 }
 
 function modalOpen(_target, _opener) {
