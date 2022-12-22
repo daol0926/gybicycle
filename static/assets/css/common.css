@@ -853,3 +853,40 @@ input[type="checkbox"]:checked::before {
     justify-content: flex-start;
     text-align: left;
 }
+
+/* social login */
+.login-social .btn-group {
+    text-align: center;
+    display: table;
+    table-layout: fixed;
+    width: calc(100% + 8px);
+    margin: 0 -4px;
+}
+.login-social .btn-cell {
+    display: table-cell;
+    width: 100%;
+    padding: 0 4px;
+}
+.login-social .btn-login {
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    border-radius: 3px;
+    text-indent: -9999px;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 36px auto;
+}
+.login-social .btn-login-naver {
+    background-color: #00c63a;
+    background-image: url(../images/common/ico-social-naver.png);
+}
+.login-social .btn-login-kakaotalk {
+    background-color: #ffeb00;
+    background-image: url(../images/common/ico-social-kakaotalk.png);
+}
+.login-social .btn-login-facebook {
+    background-color: #3b5999;
+    background-image: url(../images/common/ico-social-facebook.png);
+}
